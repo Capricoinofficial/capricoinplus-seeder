@@ -1,7 +1,7 @@
-particl-seeder
+capricoinplus-seeder
 ==============
 
-particl-seeder is a crawler for the Particl network, which exposes a list
+capricoinplus-seeder is a crawler for the Capricoin+ network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:

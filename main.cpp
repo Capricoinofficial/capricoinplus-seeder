@@ -401,8 +401,8 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"mainnet-seed.particl.io", ""};
-static const string testnet_seeds[] = {"testnet-seed.particl.io", ""};
+static const string mainnet_seeds[] = {"maindns1.capricoin.org", "maindns2.capricoin.org", "maindns3.capricoin.org" , "maindns4.capricoin.org"};
+static const string testnet_seeds[] = {"testdns1.capricoin.org", "testdns2.capricoin.org",  "testdns3.capricoin.org", "testdns4.capricoin.org" };
 
 static const string *seeds = mainnet_seeds;
 
@@ -471,9 +471,9 @@ int main(int argc, char **argv) {
   bool fDNS = true;
   if (opts.fUseTestNet) {
       printf("Using testnet.\n");
-      pchMessageStart[0] = 0x08;
-      pchMessageStart[1] = 0x11;
-      pchMessageStart[2] = 0x05;
+      pchMessageStart[0] = 0x16;
+      pchMessageStart[1] = 0x23;
+      pchMessageStart[2] = 0x1d;
       pchMessageStart[3] = 0x0b;
       seeds = testnet_seeds;
       fTestNet = true;
