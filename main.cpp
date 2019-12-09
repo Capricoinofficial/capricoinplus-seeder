@@ -401,8 +401,8 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"maindns1.capricoin.org", "maindns2.capricoin.org", "maindns3.capricoin.org" , "maindns4.capricoin.org"};
-static const string testnet_seeds[] = {"testdns1.capricoin.org", "testdns2.capricoin.org",  "testdns3.capricoin.org", "testdns4.capricoin.org" };
+static const string mainnet_seeds[] = {"maindns1.capricoin.org",""};
+static const string testnet_seeds[] = {"testdns1.capricoin.org",""};
 
 static const string *seeds = mainnet_seeds;
 
